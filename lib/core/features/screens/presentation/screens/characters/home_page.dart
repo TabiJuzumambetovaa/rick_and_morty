@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rick_morty/core/features/screens/data/repositories/characters_reopitory.dart';
-import 'package:flutter_rick_morty/core/features/screens/presentation/characters/characters_screen.dart';
+import 'package:flutter_rick_morty/core/features/screens/presentation/screens/characters/characters_screen.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/cubit/character_cubit.dart';
-import 'package:flutter_rick_morty/core/features/screens/presentation/location/location_screen.dart';
+import 'package:flutter_rick_morty/core/features/screens/presentation/screens/location/location_screen.dart';
+import 'package:flutter_rick_morty/core/features/screens/presentation/screens/settings/settings.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/app_colors.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/app_fonts.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/theme.dart';
@@ -25,13 +26,16 @@ class _HomePageState extends State<HomePage> {
 
     PersistentTabController controller;
 
-    controller = PersistentTabController(initialIndex: 0);
+    controller = PersistentTabController(initialIndex: 3);
     List<Widget> screens = [
        BlocProvider(
                           create: (context) => CharacterCubit(repository:RepositoryProvider.of<CharacterRepository>(context) ),
                           child: const CharactersScreen(),
                         ),
-      const LocationScreen(),
+       BlocProvider(
+                          create: (context) => CharacterCubit(repository:RepositoryProvider.of<CharacterRepository>(context) ),
+                          child: const LocationScreen(),
+                        ),
       const Scaffold(
         body: Center(
           child: Text(
@@ -40,14 +44,10 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      const Scaffold(
-        body: Center(
-          child: Text(
-            "Нфстройки",
-            style: AppFonts.w700s34,
-          ),
-        ),
-      ),
+       BlocProvider(
+                          create: (context) => CharacterCubit(repository:RepositoryProvider.of<CharacterRepository>(context) ),
+                          child: const SettingsScreen(),
+                        ),
      
       
     ];

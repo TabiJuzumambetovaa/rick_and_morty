@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rick_morty/core/features/screens/data/models/charactes_model.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/cubit/character_cubit.dart';
-import 'package:flutter_rick_morty/core/features/screens/presentation/location/info_location_sreen.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/app_colors.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/app_fonts.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/theme.dart';
@@ -112,12 +111,7 @@ class _InfoCharacterScreenState extends State<InfoCharacterScreen> {
                                   .origin?.name ??
                               "",
                           onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) =>  MyWidget(characterIndex: widget.characterIndex,),
-                              ),
-                            );
+                           
                           }),
                       SizedBox(
                         height: 20.h,

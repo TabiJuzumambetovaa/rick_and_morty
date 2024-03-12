@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rick_morty/core/config/app_pngs.dart';
 import 'package:flutter_rick_morty/core/consts/app_consts.dart';
-import 'package:flutter_rick_morty/core/features/screens/presentation/characters/home_page.dart';
+import 'package:flutter_rick_morty/core/features/screens/presentation/screens/characters/home_page.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/app_colors.dart';
-import 'package:flutter_rick_morty/core/features/screens/presentation/theme/app_fonts.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/widgets/alert_dialog_widget.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/widgets/auth_text_field.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/widgets/create_acc_text_button.dart';
@@ -92,14 +91,7 @@ class Auth extends StatelessWidget {
             height: 30.h,
           ),
           const CreateAccauntTextButton(),
-          Text(SharedPrefsWidget.prefs.getString(AppConsts.name) ?? ""),
-          Text(
-            SharedPrefsWidget.prefs.getString(AppConsts.lastName) ?? "",
-            style: AppFonts.w400s14.copyWith(color: AppColors.black),
-          ),
-          Text(SharedPrefsWidget.prefs.getString(AppConsts.middleName) ?? ""),
-          Text(SharedPrefsWidget.prefs.getString(AppConsts.login) ?? ""),
-          Text(SharedPrefsWidget.prefs.getString(AppConsts.passWord) ?? ""),
+          
         ],
       ),
     );

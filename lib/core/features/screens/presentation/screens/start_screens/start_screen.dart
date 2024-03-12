@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rick_morty/core/config/app_pngs.dart';
-import 'package:flutter_rick_morty/core/features/screens/presentation/auth/auth.dart';
+import 'package:flutter_rick_morty/core/features/screens/presentation/screens/auth/auth.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/app_colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

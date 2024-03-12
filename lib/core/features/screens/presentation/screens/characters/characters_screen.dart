@@ -48,9 +48,9 @@ class _CharactersScreenState extends State<CharactersScreen> {
                   // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
                   hintText: 'Найти персонажа',
                   // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
-                  onChanged: (String) {
+                  onChanged: (string) {
                     BlocProvider.of<CharacterCubit>(context)
-                        .searchCharacters(String);
+                        .searchCharacters(string);
                   },
                 ),
               ),

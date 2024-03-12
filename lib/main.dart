@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rick_morty/core/features/screens/data/repositories/characters_reopitory.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/cubit/character_cubit.dart';
-import 'package:flutter_rick_morty/core/features/screens/presentation/start_screens/start_screen.dart';
+import 'package:flutter_rick_morty/core/features/screens/presentation/screens/start_screens/start_screen.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/theme.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/widgets/shared_prefs.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

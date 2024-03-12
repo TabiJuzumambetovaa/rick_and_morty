@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rick_morty/core/features/screens/presentation/location/info_location_sreen.dart';
+import 'package:flutter_rick_morty/core/features/screens/presentation/screens/location/info_location_sreen.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/app_colors.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/app_fonts.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/theme.dart';
@@ -24,7 +24,7 @@ class LocationCustomContainer extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: InkWell(
         onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context)=> MyWidget(characterIndex: locationIndex,)));
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> MyWidget(locationIndex: locationIndex)));
         },
         child: Container(
           width: 343.w,

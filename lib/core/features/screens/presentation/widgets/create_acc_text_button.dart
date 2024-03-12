@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rick_morty/core/features/screens/presentation/auth/create_acc_screen.dart';
+import 'package:flutter_rick_morty/core/features/screens/presentation/screens/auth/create_acc_screen.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/app_colors.dart';
 import 'package:flutter_rick_morty/core/features/screens/presentation/theme/app_fonts.dart';
 
